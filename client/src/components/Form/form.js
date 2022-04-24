@@ -7,7 +7,7 @@ import { useStyles } from "./styles";
 
 const From = ({ currentId, setCurrentId }) => {
     const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
-    const post = useSelector((state) => (currentId ? state.posts.find((p) => p._id === currentId) : null));  
+    const post = useSelector((state) => (currentId ? state.posts.find((p) => p._id === currentId) : null));
     const dispatch = useDispatch();
     const classes = useStyles();
 
@@ -20,7 +20,7 @@ const From = ({ currentId, setCurrentId }) => {
         e.preventDefault();
         console.log(postData);
         if (currentId) {
-            dispatch(updatePost(postData));
+            dispatch(updatePost(currentId, postData));
         } else {
             dispatch(createPost(postData));
         }
