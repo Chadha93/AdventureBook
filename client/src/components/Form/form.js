@@ -2,7 +2,7 @@ import { Typography, TextField, Button, Paper } from "@mui/material";
 import React, { useState } from "react";
 import FileBase from "react-filebase64";
 import { useDispatch } from "react-redux";
-import { createPost } from "../../actions/posts";
+import { createPost } from "../../actions/posts.js";
 import { useStyles } from "./styles";
 
 const From = () => {
