@@ -4,9 +4,9 @@ import { useDispatch } from 'react-redux';
 
 import { getPosts } from './actions/posts';
 
-import adventures from "./images/adventures.png"
+import adventures from "./images/adventures.png";
 import Posts from "./components/Posts/Posts";
-import Form from "./components/Posts/Form/form";
+import Form from "./components/Form/form";
 import { useStyles } from "./styles";
 
 
