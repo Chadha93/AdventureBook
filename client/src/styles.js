@@ -1,5 +1,4 @@
 import makeStyles from "@mui/styles/makeStyles";
-
 export const useStyles = makeStyles((theme) => ({
     appBar: {
         borderRadius: 15,
@@ -15,4 +14,10 @@ export const useStyles = makeStyles((theme) => ({
     image: {
         marginLeft: '15px',
     },
+    // mainContainer: {
+    //     [theme.breakpoints.down('md')]: {
+    //         flexDirection: "column-reverse"
+    //     }
+    // }
+
 }));
