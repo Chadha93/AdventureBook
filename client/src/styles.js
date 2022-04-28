@@ -14,10 +14,10 @@ export const useStyles = makeStyles((theme) => ({
     image: {
         marginLeft: '15px',
     },
-    // mainContainer: {
-    //     [theme.breakpoints.down('md')]: {
-    //         flexDirection: "column-reverse"
-    //     }
-    // }
+    mainContainer: {
+        [theme.breakpoints.down('md')]: {
+            flexDirection: "column-reverse"
+        }
+    }
 
 }));
