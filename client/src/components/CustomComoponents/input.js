@@ -23,6 +23,7 @@ export default function CustomizedInputs({
                 name={name}
                 onChange={handleChange}
                 variant="outlined"
+                size="small"
                 required
                 fullWidth
                 label={label}
@@ -35,9 +36,9 @@ export default function CustomizedInputs({
                                 <InputAdornment position="end">
                                     <IconButton onClick={handleShowPassword}>
                                         {type === "password" ? (
-                                            <VisibilityOutlinedIcon />
-                                        ) : (
                                             <VisibilityOffOutlinedIcon />
+                                            ) : (
+                                            <VisibilityOutlinedIcon />
                                         )}
                                     </IconButton>
                                 </InputAdornment>
